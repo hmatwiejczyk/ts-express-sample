@@ -1,0 +1,28 @@
+{
+  "name": "ts-express-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init:ts": "tsc --init",
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmatwiejczyk/ts-express-sample.git"
+  },
+  "author": "hm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hmatwiejczyk/ts-express-sample/issues"
+  },
+  "homepage": "https://github.com/hmatwiejczyk/ts-express-sample#readme",
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1",
+    "typescript": "^3.5.3"
+  }
+}
