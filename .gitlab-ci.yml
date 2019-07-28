@@ -1,5 +1,5 @@
 build website:
-  image: node 10
+  image: node
   script:
     - npm install
     - npm run start:build
