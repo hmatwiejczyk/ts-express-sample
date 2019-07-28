@@ -3,3 +3,6 @@ build website:
   script:
     - npm install
     - npm run start:build
+  artifacts:
+    paths:
+      - ./build
