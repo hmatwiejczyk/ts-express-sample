@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "init:ts": "tsc --init",
+    "build": "tsc",
     "start:build": "tsc -w",
     "start:run": "nodemon build/index.js",
     "start": "concurrently npm:start:*"
