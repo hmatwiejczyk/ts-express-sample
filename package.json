@@ -8,7 +8,8 @@
     "build": "tsc",
     "start:build": "tsc -w",
     "start:run": "nodemon build/index.js",
-    "start": "concurrently npm:start:*"
+    "start": "concurrently npm:start:*",
+    "test-dev": "mocha -r ts-node/register test/**/*.test.ts"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,16 @@
   },
   "homepage": "https://github.com/hmatwiejczyk/ts-express-sample#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
     "@types/node": "^12.6.2",
+    "@types/supertest": "^2.0.8",
+    "chai": "^4.2.0",
     "concurrently": "^4.1.1",
+    "mocha": "^6.2.0",
     "nodemon": "^1.19.1",
+    "supertest": "^4.0.2",
+    "ts-node": "^8.3.0",
     "typescript": "^3.5.3"
   },
   "dependencies": {
