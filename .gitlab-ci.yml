@@ -2,6 +2,10 @@ image: node
 stages:
   - build
   - test
+cache:
+  key: master
+  paths:
+    - node_modules/
 
 build:
   stage: build
