@@ -1,10 +1,10 @@
+image: node
 stages:
   - build
   - test
 
 build:
   stage: build
-  image: node
   script:
     - npm install
     - npm run build
